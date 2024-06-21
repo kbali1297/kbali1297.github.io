@@ -84,11 +84,12 @@
 
             <td width="50%" valign="middle">
               <papertitle>Generative AI based Geometry Generation for Computational Fluid Dynamics</papertitle>
+            <br>
             <em>Thesis Project</em>
             <br>
-            <p>Master's Thesis work done at TUM in collaboration with BMW. This work aims on using Generative Models to compute initial guesses for 2D and 3D flow manifold geometries that minimize pressure drop between inflow and outflow.<br>
+            <p>Master's Thesis work done at TUM in collaboration with BMW. This work aims on using Generative Models to compute initial guesses for 2D and 3D flow manifold geometries that minimize pressure drop between inflow and outflow. My Academic supervisor was Prof. Nils Thuerey.<br>
             </p>
-            <a href="data/3DSSL.pdf">Report</a> /
+            <!--a href="data/3DSSL.pdf">Report</a--> /
             
             
             </td>
@@ -96,32 +97,32 @@
           
             <!-- TextDiff  -->
             <tr onmouseout="textdiff_stop()" onmouseover="textdiff_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='textdiff_image'><img src='images/textdiff1.png' width="80%" height="80%"></div>
-                <img src='images/textdiff.png' width="80%" height="80%">
+                <div class="two" id='GNN_KS'><img src='images/GNN_KS.png' width="160%" height="80%"></div>
+                <img src='images/GNN_KS.png' width="160%" height="80%">
               </div>
               <script type="text/javascript">
                 function textdiff_start() {
-                  document.getElementById('textdiff_image').style.opacity = "1";
+                  document.getElementById('GNN_KS').style.opacity = "1";
                 }
                 function textdiff_stop() {
-                  document.getElementById('textdiff_image').style.opacity = "0";
+                  document.getElementById('GNN_KS').style.opacity = "0";
                 }
                 semantic3d_stop()
               </script>
             </td>
 
-            <td width="75%" valign="middle">
-              <papertitle>Text-DiffScene: Text-driven 3D Scene Synthesis with Permutation Equivariant Graph Diffusion</papertitle>
-            <br>
-              <strong>Ananth Kalyanasundaram</strong>
+            <td width="50%" valign="middle">
+              <papertitle>Solving Kuramoto Sivashinsky Equation using Graph Convolutional Neural Networks</papertitle>
             <br>
             <em>Project</em>
             <br>
-            <p>This project was majorly done as a part of the Guided Research course held by TUM Visual Computing group.<br>
+            <p>This project involved using Message Passing Graph Neural Networks and Convolutional Neural Networks for prediction solutions to Kuramoto Sivashinsky Equation, which is a fourth order stiff ODE. 
+              Both networks were implemented in a ResNet like fashion and various temporal unrolling techniques were explored to test for solution prediction and correction. 
+              This work was done in association with Thurey's group at TUM chair of Graphics and Visualization<br>
             </p>
-            <a href="data/GR_report.pdf">Report</a> /
+            <a href="https://arxiv.org/abs/2402.12971">Report</a> /
             
             
             </td>
