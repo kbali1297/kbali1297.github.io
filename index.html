@@ -195,102 +195,35 @@
             <!-- ICCET 2020  -->
             
             <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='iccet_image'><img src='images/iccet2.jpg' width="80%" height="80%"></div>
-                <img src='images/iccet1.jpg' width="80%" height="80%">
+                <div class="two" id='Ped_VAE'><img src='images/Ped_VAE.png' width="160%" height="100%"></div>
+                <img src='images/Ped_VAE.png' width="160%" height="100%">
               </div>
               <script type="text/javascript">
                 function iccet_start() {
-                  document.getElementById('iccet_image').style.opacity = "1";
+                  document.getElementById('Ped_VAE').style.opacity = "1";
                 }
                 function iccet_stop() {
-                  document.getElementById('iccet_image').style.opacity = "0";
+                  document.getElementById('Ped_VAE').style.opacity = "0";
                 }
                 iccet_stop()
               </script>
             </td>
                 
-            <td width="75%" valign="middle">
-              <a href=https://www.psychosocial.com/article/PR201929/19549/>
-                <papertitle>Detection of Pathological Myopia by Convolutional Neural Network</papertitle>
-              </a>
+            <td width="50%" valign="middle">
+                <papertitle>Pedestrian Distribution Learning using VAEs</papertitle>
               <br>
-                <strong>Ananth Kalyanasundaram</strong>, <a href="https://www.linkedin.com/in/surya-prabhakaran/">Surya Prabhakaran</a>, J.Briskilal, D.Senthil Kumar 
-              <br>
-	      <em>ICCET 2020 </em>
-              <br>
-              <em>International Journal of Psychosocial Rehabilitation, Vol. 24, Issue 05, 2020</em>
-              <br>
-              <a href="data/PALM_final.pdf">Paper</a> /
-              <a href="https://github.com/AnanthK1998/PALM-Challenge">Code</a>
+	            <em>Project </em>
+              <p> Implemented and trained a Variational Auto-Encoder to learn pedestrian distribution inside the TUM Mathematik/Informatik building at Garching.
+                After learning distribution, estimation of pedestrians in a given area using the trained decoder was carried out for a hypothetical fire evacuation scenario.
+              <p>
+              <br>  
+              <a href="https://github.com/kbali1297/Pedestrian-Distribution-using-VAE/blob/main/Variational%20AE.ipynb">Code</a>
               
               
             </td>
             </tr>
-            <!-- Nuclei Segmentation  -->
-            
-            <tr onmouseout="nuclei_stop()" onmouseover="nuclei_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nuclei_image'><img src='images/nuclei_mask.png' width="80%" height="80%"></div>
-                <img src='images/nuclei.png' width="80%" height="80%">
-              </div>
-              <script type="text/javascript">
-                function nuclei_start() {
-                  document.getElementById('nuclei_image').style.opacity = "1";
-                }
-                function nuclei_stop() {
-                  document.getElementById('nuclei_image').style.opacity = "0";
-                }
-                nuclei_stop()
-              </script>
-            </td>
-                
-            <td width="75%" valign="middle">
-                <papertitle>Histopathic Segmentation of Nuclei using Deep Learning</papertitle>
-              <br>
-              <em>Project</em>
-              <br>
-              <p>This was a challenge held as part of the MICCAI 2018 conference. The task was to segment nuclei in a given image of a tissue.<br>
-              <a href="https://github.com/AnanthK1998/Nuclei-segmentation-MICCAI-2018-Challenge-">Code</a>
-              </p>
-              
-            </td>
-            </tr>
-            <!-- Cancer Cellularity  -->
-            
-            <tr onmouseout="cancer_stop()" onmouseover="cancer_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='cancer_image'><img src='images/cancer.jpg' width="80%" height="80%"></div>
-                <img src='images/cancer1.jpg' width="80%" height="80%">
-              </div>
-              <script type="text/javascript">
-                function cancer_start() {
-                  document.getElementById('cancer_image').style.opacity = "1";
-                }
-                function cancer_stop() {
-                  document.getElementById('cancer_image').style.opacity = "0";
-                }
-                cancer_stop()
-              </script>
-            </td>
-                
-            <td width="75%" valign="middle">
-                <papertitle>Cancer Cellularity Prediction using Deep Learning</papertitle>
-              <br>
-              <em>Project</em>
-              <br>
-              <p>This project was done towards the BreastPathQ challenge held as part of the SPIE Medical Imaging 2019 conference. The task was to predict cancer cellularity from a given image of a tissue containing cancer cells. This project helps diagnoise how well a cancer patient's body has responded to chemotherapy. This project helps predict cancer cellularity within a minute whereas conventional methods take hours.<br>
-              <a href="https://github.com/AnanthK1998/BreastPathQ">Code</a>
-              </p>
-              
-            </td>
-            </tr>
-            
-            
-        
       </td>
     </tr>
   </table>
