@@ -64,7 +64,7 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <!-- Inverse Rendering  -->
+            <!-- Thesis  -->
             <tr onmouseout="inverse_stop()" onmouseover="inverse_start()">
             <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
@@ -95,7 +95,7 @@
             </td>
             </tr>
           
-            <!-- TextDiff  -->
+            <!-- GNN_KS  -->
             <tr onmouseout="textdiff_stop()" onmouseover="textdiff_start()">
             <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
@@ -127,69 +127,67 @@
             
             </td>
             </tr>
-            <!-- Semantic3D  -->
+            <!-- PSGN  -->
             
             <tr onmouseout="semantic3d_stop()" onmouseover="semantic3d_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='adl4cv_image'><img src='images/adl4cv2.png' width="80%" height="80%"></div>
-                <img src='images/adl4cv1.jpg' width="80%" height="80%">
+                <div class="two" id='PSGN_Folding_Dec'><img src='images/PSGN_Folding_Dec' width="180%" height="80%"></div>
+                <img src='images/PSGN_Folding_Dec.png' width="180%" height="80%">
               </div>
               <script type="text/javascript">
                 function semantic3d_start() {
-                  document.getElementById('adl4cv_image').style.opacity = "1";
+                  document.getElementById('PSGN_Folding_Dec').style.opacity = "1";
                 }
                 function semantic3d_stop() {
-                  document.getElementById('adl4cv_image').style.opacity = "0";
+                  document.getElementById('PSGN_Folding_Dec').style.opacity = "0";
                 }
                 semantic3d_stop()
               </script>
             </td>
 
                 
-            <td width="75%" valign="middle">
-                <papertitle>3D Semantic Reconstruction from a single RGB Image</papertitle>
-              <br>
-                <strong>Ananth Kalyanasundaram</strong>, Mreenav Shyam Deka
+            <td width="50%" valign="middle">
+                <papertitle>Dense Point Cloud Prediction from a Single RGB Image</papertitle>
               <br>
               <em>Project</em>
               <br>
-              <p>This project was done as a part of the <a href = "https://niessner.github.io/ADL4CV/">Advanced Deep Learning for Computer Vision : Visual Computing </a> course held by Prof. Dr. Matthias Niessner.<br>
+              <p>Here a Point Set Generation Network, a two-stage reconstruction pipeline that takes a single RGB image of an
+                3D object as input and predicted a high-quality point cloud representing the shape via an Encoder-Predictor and a
+                folding Decoder network. This group project was done as a part of the <a href = "https://www.cs.cit.tum.de/cg/teaching/winter-term-22-23/machine-learning-for-3d-geometry/">Machine Learning for 3D geometry </a> course held by Prof. Dr. Angela Dai.<br>
               </p>
-              <a href="data/ADL4CV_final_report.pdf">Paper</a> /
-              <a href= "https://github.com/AnanthK1998/Semantic3D">Code</a>
+              <a href="data/PSGN_Foldingbased_ML3D.pdf">Report</a>
               
             </td>
             </tr>
             
             <!-- EMBC 2020 -->
             <tr onmouseout="embc_stop()" onmouseover="embc_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='embc_image'><img src='images/embc_after.png' width="80%" height="80%"></div>
-                <img src='images/embc_before.png' width="80%" height="80%">
+                <div class="two" id='latent_interp'><img src='images/latent_interp.gif' width="160%" height="80%"></div>
+                <img src='images/latent_interp.gif' width="160%" height="80%">
               </div>
               <script type="text/javascript">
                 function embc_start() {
-                  document.getElementById('embc_image').style.opacity = "1";
+                  document.getElementById('latent_interp').style.opacity = "1";
                 }
                 function embc_stop() {
-                  document.getElementById('embc_image').style.opacity = "0";
+                  document.getElementById('latent_interp').style.opacity = "0";
                 }
                 embc_stop()
               </script>
             </td>
-            <td width="75%" valign="middle">
-              <a href="https://ieeexplore.ieee.org/document/9176100/authors#authors">
-                <papertitle>MRI Super-Resolution using Laplacian Pyramid Convolutional Neural Networks with Isotropic Undecimated Wavelet Loss</papertitle>
-              </a>
+            <td width="50%" valign="middle">
+                <papertitle>3D Shape Reconstruction using Deep-SDF</papertitle>
               <br>
-                <a href="https://in.linkedin.com/in/sriprabha-r-772b592b">Sriprabha Ramanarayanan</a>, <a href="https://bala93.github.io/">Balamurali Murugesan</a>, <strong>Ananth Kalyanasundaram</strong>, <a href="https://scholar.google.com/citations?hl=en&user=coZBR5UAAAAJ">Surya Prabhakaran</a>, <a href=https://scholar.google.com/citations?user=IUk8C0MAAAAJ&hl=en>Keerthi Ram</a>, <a href=https://scholar.google.com/citations?user=8FDYMQ8AAAAJ&hl=en>Shantanu Patil</a>, <a href=http://www.ee.iitm.ac.in/~mohan/>Mohanasankar Sivaprakasam</a>
-              <br>
-              <em> 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society(EMBC)</em>
-	      <br>
-              <a href="data/EMBC20_2014_FI.pdf">Paper</a> /
-              <a>Code (Available soon) </a>
+              <em> Project</em>
+              <p>Implemented a Deep-SDF architecture that learns continuous representation of shapes. Trained it on the
+                shapenet dataset to achieve high resolution shape completion and latent interpolation on the test set. 
+                Also done as a part of the <a href = "https://www.cs.cit.tum.de/cg/teaching/winter-term-22-23/machine-learning-for-3d-geometry/">Machine Learning for 3D geometry </a>
+                 course held by Prof. Dr. Angela Dai.<br>
+              <p>
+              <a href="https://github.com/kbali1297/DeepSDF-and-3D-EPN">Code</a> /
             </td>
             </tr>
             
