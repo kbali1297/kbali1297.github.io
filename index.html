@@ -87,7 +87,10 @@
             <br>
             <em>Thesis Project</em>
             <br>
-            <p>Master's Thesis work done at TUM in collaboration with BMW. This work aims on using Generative Models to compute initial guesses for 2D and 3D flow manifold geometries that minimize pressure drop between inflow and outflow. My Academic supervisor was Prof. Nils Thuerey.<br>
+            <p>Master's Thesis work done at TUM in collaboration with BMW. This work aims on using Generative Models to compute initial guesses
+               for 2D and 3D flow manifold geometries that minimize pressure drop between inflow and outflow. A module for fluid based 2D and 3D topology optimization 
+               was developed in <a href="https://github.com/tum-pbs/PhiFlow/tree/master">Phiflow</a>.
+               My Academic supervisor was Prof. Nils Thuerey.<br>
             </p>
             <a href="data/Master Thesis Presentation_.pdf">Presentation</a-->
             
@@ -161,7 +164,7 @@
             </td>
             </tr>
             
-            <!-- EMBC 2020 -->
+            <!-- Deep-SDF -->
             <tr onmouseout="embc_stop()" onmouseover="embc_start()">
             <td style="padding:20px;width:50%;vertical-align:middle">
               <div class="one">
@@ -192,7 +195,7 @@
             </tr>
             
             
-            <!-- ICCET 2020  -->
+            <!-- Ped_VAE  -->
             
             <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
             <td style="padding:20px;width:50%;vertical-align:middle">
@@ -224,6 +227,74 @@
               
             </td>
             </tr>
+
+             <!-- Differentiable Physics  -->
+            
+             <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
+              <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='Diff_Pack'><img src='images/Diff_Pack.jpg' width="160%" height="100%"></div>
+                  <img src='images/Diff_Pack.jpg' width="160%" height="100%">
+                </div>
+                <script type="text/javascript">
+                  function iccet_start() {
+                    document.getElementById('Diff_Pack').style.opacity = "1";
+                  }
+                  function iccet_stop() {
+                    document.getElementById('Diff_Pack').style.opacity = "0";
+                  }
+                  iccet_stop()
+                </script>
+              </td>
+                  
+              <td width="50%" valign="middle">
+                  <papertitle>2D Sphere Packing Using Differentiable Physics</papertitle>
+                <br>
+                <em>Project </em>
+                <p> Solved the problem of efficient sphere packing in 2D via gradient based optimization of the energy interaction
+                  function. Computed the smallest most optimal domain size to accomodate given number of spheres, entirely through
+                  differential physics. <a href="https://github.com/tum-pbs/PhiFlow/tree/master">Phiflow</a>, a machine learning based optimization
+                   library for differentiable physics at TUM, was used in this work. 
+                <p>
+                <br>  
+                <a href="https://github.com/kbali1297/2D-Sphere-Packing-using-Differential-Physics/blob/main">Code</a>
+                
+                
+              </td>
+              </tr>
+
+            <!-- Ray-Tracer  -->
+            
+            <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
+              <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='InGame'><img src='images/InGame.png' width="160%" height="100%"></div>
+                  <img src='images/InGame.png' width="160%" height="100%">
+                </div>
+                <script type="text/javascript">
+                  function iccet_start() {
+                    document.getElementById('InGame').style.opacity = "1";
+                  }
+                  function iccet_stop() {
+                    document.getElementById('InGame').style.opacity = "0";
+                  }
+                  iccet_stop()
+                </script>
+              </td>
+                  
+              <td width="50%" valign="middle">
+                  <papertitle>3D Ray Tracer App</papertitle>
+                <br>
+                <em>Project </em>
+                <p> Developed a 3D interactive ray tracing application on C++ using Simple Direct Media Layer (SDL2). 
+                  The user can construct obtacles and roam in the generated scene using WASD keys.
+                <p>
+                <br>  
+                <a href="https://github.com/kbali1297/3D-Ray-Tracer">Code</a>
+                
+                
+              </td>
+              </tr>
       </td>
     </tr>
   </table>
