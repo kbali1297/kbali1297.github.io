@@ -264,6 +264,41 @@
               </td>
               </tr>
 
+            <!-- RL Physics  -->
+            
+            <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
+              <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='2D_RL_JAX-FEM'><img src='images/2D_RL_JAX-FEM.png' width="160%" height="100%"></div>
+                  <img src='images/2D_RL_JAX-FEM.png' width="160%" height="100%">
+                </div>
+                <script type="text/javascript">
+                  function iccet_start() {
+                    document.getElementById('2D_RL_JAX-FEM').style.opacity = "1";
+                  }
+                  function iccet_stop() {
+                    document.getElementById('2D_RL_JAX-FEM').style.opacity = "0";
+                  }
+                  iccet_stop()
+                </script>
+              </td>
+                  
+              <td width="50%" valign="middle">
+                  <papertitle>Topology Optimization using Reinforcement Learning in JAX-FEM</papertitle>
+                <br>
+                <em>Project </em>
+                <p> Solved the problem of solid topology optimization for a small 2D 6X6 Plate using Reinforcement Learning and package 
+                  <a href="https://github.com/deepmodeling/jax-fem">JAX-FEM</a> in tensorflow and JAX. 
+                  A Double Q Network was used as the agent with JAX-FEM as the Reinforcement Learning Environment.
+                  This project was done collectively with my team mates as part TUM Data Innovation Lab.                     
+                <p>
+                <br>  
+                <a href="data/TUM_DI_LAB.pdf">Report</a>
+                
+                
+              </td>
+              </tr>
+
             <!-- Ray-Tracer  -->
             
             <tr onmouseout="iccet_stop()" onmouseover="iccet_start()">
