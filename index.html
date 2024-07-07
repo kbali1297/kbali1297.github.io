@@ -165,6 +165,40 @@
             </td>
             </tr>
             
+
+            <!-- YOLOv3_SSD  -->
+            
+            <tr onmouseout="semantic3d_stop()" onmouseover="semantic3d_start()">
+              <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='Car_detection_YOLOv3'><img src='images/Car_detection_YOLOv3.png' width="180%" height="80%"></div>
+                  <img src='images/Car_detection_YOLOv3.png' width="180%" height="80%">
+                </div>
+                <script type="text/javascript">
+                  function semantic3d_start() {
+                    document.getElementById('Car_detection_YOLOv3').style.opacity = "1";
+                  }
+                  function semantic3d_stop() {
+                    document.getElementById('Car_detection_YOLOv3').style.opacity = "0";
+                  }
+                  semantic3d_stop()
+                </script>
+              </td>
+  
+                  
+              <td width="50%" valign="middle">
+                  <papertitle>On Road Object Detection using YOLOv3 and SSD</papertitle>
+                <br>
+                <em>Project</em>
+                <br>
+                <p> I implemented the <a href = "https://arxiv.org/abs/1804.02767">YOLOv3 </a> and <a href = "https://arxiv.org/pdf/1512.02325">SSD</a> object detection frameworks and then trained them on the KITTI driving dataset. Both the algorithms 
+                  were compared on their mAP scores and run-time performance. This project was done as part of the Autonomous Driving course at TUM. <br>
+                </p>
+                <a href="https://github.com/kbali1297/YOLOV3_SSD/blob/main/exercise.ipynb">Report</a>
+                
+              </td>
+              </tr>
+
             <!-- Deep-SDF -->
             <tr onmouseout="embc_stop()" onmouseover="embc_start()">
             <td style="padding:20px;width:50%;vertical-align:middle">
