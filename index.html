@@ -138,8 +138,8 @@
             <tr onmouseout="semantic3d_stop()" onmouseover="semantic3d_start()">
               <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='Car_detection_YOLOv3'><img src='images/Car_detection_YOLOv3.png' width="180%" height="100%"></div>
-                  <img src='images/Car_detection_YOLOv3.png' width="180%" height="100%">
+                  <div class="two" id='YOLOV3_SSD'><img src='images/YOLOV3_SSD.png' width="180%" height="100%"></div>
+                  <img src='images/YOLOV3_SSD.png' width="180%" height="100%">
                 </div>
                 <script type="text/javascript">
                   function semantic3d_start() {
@@ -159,10 +159,11 @@
                 <em>Project</em>
                 <br>
                 <p> I implemented the <a href = "https://arxiv.org/abs/1804.02767">YOLOv3 </a> and <a href = "https://arxiv.org/pdf/1512.02325">SSD</a> (with VGG-16 as base network) object detection
-                   frameworks and then trained them on the miniKITTI driving dataset. Both the algorithms 
-                  were compared on their mAP, F1 scores and inference performance for car detection on highways. <br>
+                   frameworks and then trained them on the KITTI driving dataset comprising of 7 distinct classes. Both the algorithms 
+                  were compared on their mAP, F1 scores and inference performance for car detection on highways. 
+                  I optimized SSD for faster inference using L2 norm based network pruning, beating YOLOV3 both in terms of accuracy and run-time inference speed. <br>
                 </p>
-                <a href="https://github.com/kbali1297/YOLOV3_SSD/blob/main/main.ipynb">Code</a>
+                <a href="https://github.com/kbali1297/YOLOV3_SSD/blob/full_kitti/main.ipynb">Code</a>
                 
               </td>
               </tr>
