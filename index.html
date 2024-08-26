@@ -138,7 +138,7 @@
             <tr onmouseout="semantic3d_stop()" onmouseover="semantic3d_start()">
               <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='YOLOV3_SSD'><img src='images/YOLOV3_SSD.png' width="180%" height="100%"></div>
+                  <div class="two" id='YOLOV3_SSD'><img src='images/YOLOV3_SSD_fusion.png' width="180%" height="100%"></div>
                   <img src='images/YOLOV3_SSD.png' width="180%" height="100%">
                 </div>
                 <script type="text/javascript">
@@ -154,7 +154,7 @@
   
                   
               <td width="50%" valign="middle">
-                  <papertitle>On Road Object Detection using YOLOv3 and SSD</papertitle>
+                  <papertitle>On Road Object Detection and Early Fusion</papertitle>
                 <br>
                 <em>Project</em>
                 <br>
@@ -162,6 +162,7 @@
                    frameworks and then trained them on the KITTI driving dataset comprising of 7 distinct classes. Both models 
                   were compared on their mAP, F1 scores and inference performance for object detection on highways. 
                   I optimized SSD for faster inference using L2 norm based network pruning, comparable detection accuracy and better run-time inference speed comparable to YOLOv3 tiny model. <br>
+                  Implemented LiDAR sensor fusion over the detected bounding boxes via pruned SSD model.
                 </p>
                 <a href="https://github.com/kbali1297/YOLOV3_SSD/blob/full_kitti/main.ipynb">Code</a>
                 
