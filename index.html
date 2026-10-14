@@ -52,8 +52,9 @@
         I study what multimodal foundation models actually understand about <b>3D geometry and physics</b>,
         and how to make them act on it: deciding <b>where to look</b> in a 3D scene, and writing
         <b>executable programs</b> (CAD, BIM) that reconstruct what they see. My work spans
-        vision-language models, active view selection, and RL post-training with execution rewards,
-        and I collaborate closely with <a href="https://www.dfki.de/">DFKI</a>.
+        vision-language grounding in 3D, active view selection, RL post-training with execution rewards,
+        and mechanistic analysis of what VLMs rely on when they reconstruct geometry. I collaborate closely with
+        <a href="https://www.dfki.de/">DFKI</a>.
       </p>
       <p>
         Before my PhD, I did my M.Sc. in Computational Science &amp; Engineering at the
@@ -150,6 +151,8 @@
           view selector picks feasible views for a VLM that writes executable CadQuery code, and both are trained
           <b>jointly with RL against execution reward</b>. Outperforms strong baselines by +21 / +17 effective-mIoU on
           occluded DeepCAD / Fusion360, transfers to real T-LESS and MP6D images, with &le;1.5% invalid code.
+          Layer-wise ablations of each view's visual tokens give a mechanistic account of which views make which
+          program parameters legible to the VLM.
           <i>(Hover: ground truth vs. our reconstructions on DeepCAD, Fusion360 and T-LESS.)</i>
         </p>
         <div class="plinks">
