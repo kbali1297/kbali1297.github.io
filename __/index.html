@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7F918GXSD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B7F918GXSD');
+  </script>
+
+  <title>Kartik Bali</title>
+  <meta name="author" content="Kartik Bali">
+  <meta name="description" content="Kartik Bali - PhD candidate studying what foundation models understand about 3D geometry and physics. NeurIPS 2026, ECCV 2026.">
+  <meta property="og:title" content="Kartik Bali">
+  <meta property="og:description" content="PhD candidate: what foundation models understand about 3D geometry and physics.">
+  <meta property="og:image" content="https://kbali1297.github.io/images/Kartik_circ.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/Kartik_circ.png">
+</head>
+
+<body>
+
+<nav>
+  <div class="container">
+    <a class="brand" href="#">Kartik Bali</a>
+    <ul>
+      <li><a href="#news">News</a></li>
+      <li><a href="#research">Research</a></li>
+      <li class="hide-sm"><a href="#experience">Experience</a></li>
+      <li class="hide-sm"><a href="#projects">Projects</a></li>
+      <li><a href="data/Kartik_Bali_CV.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- ================= About ================= -->
+  <header>
+    <div class="intro">
+      <h1>Kartik Bali</h1>
+      <p class="role">PhD Candidate &middot; Helmholtz-Zentrum Hereon &amp; TU Hamburg</p>
+
+      <p>
+        I study what multimodal foundation models actually understand about <b>3D geometry and physics</b>, and
+        where that understanding breaks. My NeurIPS 2026 paper tests whether off-the-shelf multimodal LLMs can
+        point out the stress-critical regions of a 3D part, with no simulation at all. I also look inside these models:
+        ablating visual tokens view by view to see which views a VLM really relies on. Alongside that, I build
+        systems that ground language in 3D meshes and turn what a VLM sees into executable programs.
+        I collaborate closely with <a href="https://www.dfki.de/">DFKI</a>.
+      </p>
+      <p>
+        Before my PhD, I did my M.Sc. in Computational Science &amp; Engineering at the
+        <a href="https://www.tum.de">Technical University of Munich</a>, with a master thesis at
+        <a href="https://www.bmw.com">BMW</a> on physics-guided generative models, supervised by
+        <a href="https://ge.in.tum.de/about/n-thuerey/">Prof. Nils Thuerey</a>. I hold a B.E. in Mechanical
+        Engineering from <a href="https://www.bits-pilani.ac.in/hyderabad/">BITS Pilani, Hyderabad</a>.
+        Outside research, I play lead guitar and sing.
+      </p>
+
+      <p class="callout">I am available for a <b>6-month, full-time student researcher role</b>, starting between January and April 2027.</p>
+
+      <div class="links">
+        <a href="mailto:kartikbali1297@gmail.com">Email</a>
+        <a href="data/Kartik_Bali_CV.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?user=bPS-4gIAAAAJ">Google Scholar</a>
+        <a href="https://github.com/kbali1297">GitHub</a>
+        <a href="https://www.linkedin.com/in/kartikbali1296/">LinkedIn</a>
+      </div>
+    </div>
+    <div class="photo">
+      <a href="../images/Kartik.jpg"><img src="../images/Kartik_circ.png" alt="Kartik Bali"></a>
+    </div>
+  </header>
+
+  <!-- ================= News ================= -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">Oct 2026</span><span>Looking for a student researcher position starting in early 2027.</span></li>
+      <li><span class="date">Oct 2026</span><span><b>Look Where You Can</b> (SightCAD) preprint is on <a href="https://arxiv.org/abs/2610.11954">arXiv</a>.</span></li>
+      <li><span class="date">Sep 2026</span><span><b>GReFEM</b> accepted at <b>NeurIPS 2026</b>! Paper on <a href="https://arxiv.org/abs/2607.08798">arXiv</a>, code on <a href="https://github.com/kbali1297/GReFEM">GitHub</a>.</span></li>
+      <li><span class="date">Jul 2026</span><span><b>MV-GEL</b> accepted at <b>ECCV 2026</b>! Code and paper are <a href="https://arxiv.org/abs/2606.31533">online</a>.</span></li>
+      <li><span class="date">Jan 2025</span><span>Started my PhD at Helmholtz-Zentrum Hereon.</span></li>
+    </ul>
+  </section>
+
+  <!-- ================= Research ================= -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <h3>First-author papers</h3>
+
+    <div class="paper highlight">
+      <div class="teaser"><img src="../images/grefem_teaser.jpg" alt="GReFEM pipeline"></div>
+      <div class="body">
+        <p class="title">GReFEM: Multimodal LLMs as Zero-Shot Semantic Assistants for Physics-Guided 3D Mesh Refinement</p>
+        <p class="authors"><b>Kartik Bali</b>, Mahish K. Guru, Christian J. Cyron, Roland Aydin</p>
+        <p class="venue"><i>NeurIPS 2026</i> <span class="badge accepted">ACCEPTED</span></p>
+        <p class="desc">
+          Can off-the-shelf multimodal LLMs stand in for a physics solver? We ask MLLMs to point out stress-critical
+          regions from physics-guided prompts, and connect 2D pre-training to 3D geometry with <i>orthoViews</i>, a
+          trained view-selection module that picks the views where features are most visible. Without any FEM solve or
+          simulation training data, GReFEM closes <b>58%</b> of the gap between the unrefined mesh and a reference-solve
+          oracle at a matched element budget. Just as important, we map where MLLMs succeed and where they still fall short.
+        </p>
+        <div class="plinks">
+          <a href="https://arxiv.org/abs/2607.08798">Paper</a>
+          <a href="https://github.com/kbali1297/GReFEM">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="paper highlight">
+      <div class="teaser"><img src="../images/mvgel_teaser.jpg" alt="MV-GEL overview"></div>
+      <div class="body">
+        <p class="title">MV-GEL: Language-Driven Multi-View Geometric Entity Localization on Meshes</p>
+        <p class="authors"><b>Kartik Bali</b>, Roland Aydin</p>
+        <p class="venue"><i>ECCV 2026</i> <span class="badge accepted">ACCEPTED</span></p>
+        <p class="desc">
+          Finding fine-grained geometric entities (edges, planar regions, curved surfaces) on 3D meshes from natural
+          language. The model picks views based on the prompt, segments them with a VLM reasoning-segmentation backbone,
+          and lifts the result back to the mesh with geometry-aware ray casting. Up to <b>1.7&times;</b> face-level IoU
+          and <b>4.5&times;</b> edge-level F1 over CLIP-based and random-view baselines.
+        </p>
+        <div class="plinks">
+          <a href="https://arxiv.org/abs/2606.31533">Paper</a>
+          <a href="https://github.com/kbali1297/MV-GEL">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="teaser">
+        <img src="../images/sightcad_teaser.jpg" alt="SightCAD joint training">
+        <img class="hover" src="../images/sightcad_results.jpg" alt="SightCAD reconstructions: ground truth (top) vs ours (bottom)">
+      </div>
+      <div class="body">
+        <p class="title">Look Where You Can: Active View Selection for CAD Reconstruction under Occlusion</p>
+        <p class="authors"><b>Kartik Bali</b>, Mahish Guru, Yiderigun Borjigin, Alexandra Starostina, Christian J. Cyron, Roland Aydin</p>
+        <p class="venue"><i>Preprint, 2026</i> <span class="badge review">UNDER REVIEW</span></p>
+        <p class="desc">
+          Real objects sit inside scenes: walls, floors, and corners make much of the view sphere unreachable. A learned
+          view selector picks feasible views for a VLM that writes executable CadQuery code, and both are trained
+          jointly with RL against execution reward. +21 / +17 effective mIoU over strong baselines on occluded
+          DeepCAD / Fusion360, with &le;1.5% invalid code. <b>Layer-wise ablations of each view's visual tokens</b>
+          show which views make which program parameters readable to the VLM.
+          <i>(Hover: ground truth vs. our reconstructions on DeepCAD, Fusion360 and T-LESS.)</i>
+        </p>
+        <div class="plinks">
+          <a href="https://arxiv.org/abs/2610.11954">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Ongoing</h3>
+
+    <div class="paper">
+      <div class="teaser"><img src="../images/point2bim_teaser.jpg" alt="Point cloud to BIM program"></div>
+      <div class="body">
+        <p class="title">Point2BIM: From Real Laser Scans to Executable Building Programs</p>
+        <p class="authors"><b>Kartik Bali</b>, in collaboration with DFKI</p>
+        <p class="venue"><span class="badge ongoing">ONGOING</span></p>
+        <p class="desc">
+          Turning real terrestrial laser scans of buildings into executable BIM programs (exported to IFC4) with
+          vision-language models. SFT followed by GRPO on execution-based geometric rewards. The goal is a model
+          that works on real scans, not just synthetic scenes.
+        </p>
+      </div>
+    </div>
+
+    <h3>Co-authored</h3>
+    <ol class="pubs-compact">
+      <li>
+        J. Minder, V. Moskvoretskii, R. Singhal, D. Jiao, A. Arditi, S. Cui, Y. Borjigin, <b>K. Bali</b>, S. Krsteski,
+        H. Raj, H. Nguyen, J. Brinkmann, A. Anderson, R. Aydin, R. West.
+        <i>Synthetic Persona Pretraining: Alignment from Token Zero.</i> Preprint, 2026.
+        <a href="https://arxiv.org/abs/2608.13482">[arXiv]</a>
+      </li>
+      <li>
+        M. K. Guru, V. Gupta, <b>K. Bali</b>, et al.
+        <i>From Finite Element Analysis to Self-Optimization: FRAME (Finite element Reasoning and AI-Agent Model Engine)
+        and the Era of Agentic AI in Engineering.</i> Under review at npj Computational Materials, 2026.
+      </li>
+      <li>
+        M. Tacke, &hellip;, <b>K. Bali</b>, et al.
+        <i>Constitutive Scientific Generative Agent (CSGA): Leveraging Large Language Models for Automated Constitutive
+        Model Discovery.</i> Machine Learning for Computational Science and Engineering, 2025.
+      </li>
+      <li>
+        B. List, L.-W. Chen, <b>K. Bali</b>, N. Thuerey.
+        <i>Differentiability in Unrolled Training of Neural Physics Simulators on Transient Dynamics.</i>
+        Computer Methods in Applied Mechanics and Engineering (CMAME), 2025.
+        <a href="https://arxiv.org/abs/2402.12971">[arXiv]</a>
+      </li>
+      <li>
+        <b>K. Bali</b>, K. Supradeepan.
+        <i>Numerical Analysis of Flow Past an Oscillating Circular Cylinder using Arbitrary Lagrangian Eulerian
+        Consistent Flux Reconstruction Scheme.</i> 2019.
+        <a href="https://arxiv.org/abs/1911.03415">[arXiv]</a>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ================= Experience ================= -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><span class="when">Jan 2025 &ndash; now</span><span class="what"><b>PhD Candidate</b>, Helmholtz-Zentrum Hereon, Hamburg. What VLMs understand about 3D geometry and physics; view selection; RL post-training.</span></li>
+      <li><span class="when">Sep &ndash; Dec 2024</span><span class="what"><b>AI Engineer</b>, Project-S and Beyond Technologies, Munich. ML for radar perception and signal processing.</span></li>
+      <li><span class="when">Sep 2023 &ndash; May 2024</span><span class="what"><b>Master Thesis</b>, BMW AG, Munich. Physics-guided diffusion models and GANs that made 2D/3D flow-geometry design 2&times; faster (grade 1.0).</span></li>
+      <li><span class="when">May 2022 &ndash; Aug 2023</span><span class="what"><b>ML Working Student</b>, TUM Thuerey group. GNNs and ResNets for chaotic PDEs; CI/CD for <a href="https://github.com/tum-pbs/PhiFlow">PhiFlow</a>.</span></li>
+      <li><span class="when">Earlier</span><span class="what"><b>Software Engineer</b>, L&amp;T Construction. Automated data pipelines.</span></li>
+    </ul>
+  </section>
+
+  <!-- ================= Projects ================= -->
+  <section id="projects">
+    <h2>Earlier Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../images/PSGN_Folding_Dec.png" alt="">
+        <div class="content">
+          <b>Dense Point Clouds from a Single RGB Image</b>
+          <p>Two-stage point set generation with an encoder-predictor and folding decoder (ML for 3D Geometry, Prof. Angela Dai).</p>
+          <a href="../data/PSGN_Foldingbased_ML3D.pdf">Report</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/latent_interp.gif" alt="">
+        <div class="content">
+          <b>3D Shape Completion with DeepSDF &amp; 3D-EPN</b>
+          <p>Continuous SDF shape representations on ShapeNet: completion and latent interpolation.</p>
+          <a href="https://github.com/kbali1297/DeepSDF-and-3D-EPN/blob/main/main.ipynb">Code</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/GNN_KS.png" alt="">
+        <div class="content">
+          <b>GNNs for the Kuramoto&ndash;Sivashinsky Equation</b>
+          <p>Message-passing GNNs and CNNs with temporal unrolling for chaotic PDEs; led to the CMAME 2025 paper.</p>
+          <a href="https://arxiv.org/abs/2402.12971">Paper</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/GenAI_Geom_gen.gif" alt="">
+        <div class="content">
+          <b>Generative Geometry Design for CFD</b>
+          <p>Master thesis (TUM &times; BMW): physics-guided generative models synthesize low-pressure-drop flow manifolds, with fluid topology optimization in PhiFlow.</p>
+          <a href="../data/Master Thesis Presentation_.pdf">Slides</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/YOLOV3_SSD_fusion.png" alt="">
+        <div class="content">
+          <b>Object Detection with LiDAR Fusion</b>
+          <p>YOLOv3 and SSD on KITTI; L2-norm pruning for faster SSD inference and early LiDAR fusion.</p>
+          <a href="https://github.com/kbali1297/YOLOV3_SSD/blob/full_kitti/main.ipynb">Code</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/2D_RL_JAX-FEM.png" alt="">
+        <div class="content">
+          <b>Topology Optimization with RL in JAX-FEM</b>
+          <p>Double-Q agent with JAX-FEM as the environment (TUM Data Innovation Lab).</p>
+          <a href="../data/TUM_DI_LAB.pdf">Report</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/Diff_Pack.jpg" alt="">
+        <div class="content">
+          <b>Sphere Packing via Differentiable Physics</b>
+          <p>Gradient-based minimization of overlap energy to find optimal 2D packings in PhiFlow.</p>
+          <a href="https://github.com/kbali1297/2D-Sphere-Packing-using-Differential-Physics/blob/main/Sphere_Packing.ipynb">Code</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/Ped_VAE.png" alt="">
+        <div class="content">
+          <b>Pedestrian Distributions with VAEs</b>
+          <p>Learning crowd distributions in the TUM MI building for evacuation scenarios.</p>
+          <a href="https://github.com/kbali1297/Pedestrian-Distribution-using-VAE/blob/main/Variational%20AE.ipynb">Code</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/InGame.png" alt="">
+        <div class="content">
+          <b>Interactive 3D Ray Tracer</b>
+          <p>First-person ray-tracing app in C++ with SDL2.</p>
+          <a href="https://github.com/kbali1297/3D-Ray-Tracer">Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Last updated October 2026 &middot; Inspired by <a href="https://jonbarron.info/">Jon Barron</a>'s template.
+</footer>
+
+</body>
+</html>
